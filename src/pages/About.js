@@ -10,7 +10,7 @@ function About() {
     </LeftContainer>
     <RightContainer>
       <ImageContainer>
-        <img src="/images/profile.jpg" ></img>
+        <img src={`${process.env.PUBLIC_URL}/images/profile.jpg`} alt="My Image"></img>
       </ImageContainer>
       <CaptionContainer>
         <p>My favorite shirt, titled "felines in the forest". There are some similar on ebay if interested* </p>
