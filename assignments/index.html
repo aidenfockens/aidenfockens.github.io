@@ -2,10 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=/#/assignments">
   <title>Redirecting...</title>
+  <script type="text/javascript">
+    // Check the current URL path
+    var path = window.location.pathname;
+
+    // Redirect to appropriate hash-based route
+    if (path === "/assignments") {
+      window.location.href = "/#/assignments";
+    } else if (path === "/") {
+      window.location.href = "/#/";
+    }
+  </script>
 </head>
 <body>
-  <p>If you are not redirected, <a href="/#/assignments">click here</a>.</p>
+  <p>If you are not redirected, you can visit the following links:</p>
+  <ul>
+    <li><a href="/#/assignments">Assignments</a></li>
+    <li><a href="/#/">Home</a></li>
+  </ul>
 </body>
 </html>
