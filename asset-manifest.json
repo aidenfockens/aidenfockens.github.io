@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/aidenfockens.github.io/static/css/main.f855e6bc.css",
-    "main.js": "/aidenfockens.github.io/static/js/main.9aef8280.js",
-    "index.html": "/aidenfockens.github.io/index.html",
-    "main.f855e6bc.css.map": "/aidenfockens.github.io/static/css/main.f855e6bc.css.map",
-    "main.9aef8280.js.map": "/aidenfockens.github.io/static/js/main.9aef8280.js.map"
+    "main.css": "/static/css/main.f855e6bc.css",
+    "main.js": "/static/js/main.ce704b3d.js",
+    "index.html": "/index.html",
+    "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
+    "main.ce704b3d.js.map": "/static/js/main.ce704b3d.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.9aef8280.js"
+    "static/js/main.ce704b3d.js"
   ]
 }
