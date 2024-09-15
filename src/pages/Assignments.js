@@ -5,8 +5,8 @@ function Assignments() {
   return (
     <PageContainer>
         <LeftContainer>
-        <AssignmentNameText>Assignment 1</AssignmentNameText>
-        <InfoText>This assignment has not been completed yet</InfoText>
+        <AssignmentNameText>Assignment 0</AssignmentNameText>
+        <InfoText>Dummy assignment</InfoText>
 
         </LeftContainer>
         <RightContainer>
