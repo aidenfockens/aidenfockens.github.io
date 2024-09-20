@@ -12,6 +12,14 @@ function Assignments() {
         <RightContainer>
             <GreenButton href= "https://github.com/aidenfockens/afockens-assignment-0">Github Link</GreenButton>
         </RightContainer>
+        <LeftContainer>
+        <AssignmentNameText>Assignment 1</AssignmentNameText>
+        <InfoText>We observed the frequency of different elevators in order to determine the most efficient place to stand</InfoText>
+
+        </LeftContainer>
+        <RightContainer>
+            <GreenButton href= "https://github.com/aidenfockens/afockens-assignment-1">Github Link</GreenButton>
+        </RightContainer>
     </PageContainer>
   );
 }
