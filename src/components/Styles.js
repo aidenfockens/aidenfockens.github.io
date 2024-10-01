@@ -1,3 +1,4 @@
+
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
@@ -15,12 +16,24 @@ export const colors = {
   };
 
 // Main content container for each page
+
+
 export const PageContainer = styled.div`
   padding-top: 4rem; /* Space for the fixed navbar */
-  display: flex;
+  display: flex;  
+  flex-direction:column;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1200px; /* Limit max-width for larger screens */
+`;
+
+
+export const RowContainer = styled.div`
+  display: flex;
+  flex-direction: row; /* Place LeftContainer and RightContainer side by side */
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px; /* Space between assignment rows */
 `;
 
 // Left container for text
@@ -150,4 +163,108 @@ export const GreenButton = styled.a`
     background-color: #c3e6cb; /* Light green when disabled */
     cursor: not-allowed;
   }
+`;
+
+// Text container that takes up two-thirds of LeftContainer
+export const LargeTextContainer = styled.div`
+  flex-basis: 39%; /* Takes up two-thirds of the LeftContainer */
+  font-size: 22px; /* Larger font size */
+  line-height: 1.4; /* Adjust line-height for better readability */
+  color: ${colors.darkGray}; /* Darker gray for readability */
+  padding: 0px;
+
+`;
+
+// Example usage of the text within LeftContainer
+export const StyledParagraph = styled.p`
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: ${colors.darkGray}; /* Match the text color to the theme */
+  text-align: justify; /* Justify text for a clean, professional appearance */
+`;
+
+
+export const Title = styled.h2`
+  font-family: 'Montserrat', sans-serif; /* Modern font */
+  font-size: 70px; /* Large and bold */
+  font-weight: 700; /* Bold text */
+  text-align: center; /* Center the title */
+  text-decoration: underline; /* Underline the text */
+  color: ${colors.darkGray}; /* Dark gray color for a modern look */
+  margin: 40px 0; /* Space above and below the title */
+`;
+
+// Left container for text
+export const LeftContainerWhite = styled.div`
+  flex: 1;
+  margin:20px;
+  padding: 20px;
+  background-color: ${colors.white};
+  border-radius: 20px 20px 20px 20px;
+`;
+
+
+export const RightContainerWhite = styled.div`
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: ${colors.white};
+  border-radius: 20px 20px 20px 20px;
+`;
+
+
+export const BulletList = styled.ul`
+  list-style-type: disc; /* Adds bullet points */
+  padding-left: 20px; /* Adds some padding to indent the bullet points */
+  font-size: 22px;
+  line-height: 1.6;
+  color: ${colors.darkGray}; /* Darker gray for readability */
+`;
+
+export const BulletItem = styled.li`
+  margin-bottom: 4 px;
+  font-size: 22px;
+  font-weight: 500;
+  color: ${colors.darkGray}; /* Standard dark gray text */
+  padding: 10px;
+  border-radius: 5px;
+
+`;
+
+// Highlighted text with background color for emphasis
+export const HighlightText = styled.span`
+  font-size: 26px;
+  font-weight: bold;
+  color: ${colors.darkGray}; /* Standard dark gray text */
+  background-color: ${colors.secondary}; /* Subtle secondary light red background */
+  padding: 5px 10px;
+  border-radius: 5px; /* Slightly rounded corners for a smooth look */
+  display: inline-block; /* Ensures background wraps just the text */
+`;
+
+// Sub-text for additional information
+export const SubText = styled.span`
+  font-size: 20px;
+  font-weight: normal;
+  color: ${colors.darkGray}; /* Standard dark gray text */
+  display: block;
+  margin-top: 5px; /* Spacing to separate from the highlighted text */
+`;
+
+// Interest list for key interests with background color
+export const InterestItem = styled.li`
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #8a0c26; /* Complementary green for interests */
+`;
+
+export const InterestList = styled.ul`
+  list-style-type: disc; /* Adds bullet points */
+  padding-left: 40px; /* Indent for bullet points */
+  font-size: 20px;
+  line-height: 1.6;
+  color: ${colors.darkGray}; /* Standard dark gray color */
 `;
