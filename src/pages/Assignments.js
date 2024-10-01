@@ -45,7 +45,7 @@ function Assignments() {
 
       <RowContainer>
         <LeftContainer>
-          <AssignmentNameText>Assignment 4</AssignmentNameText>
+          <AssignmentNameText>Assignment 3</AssignmentNameText>
           <InfoText>I performed varying levels of SVD decomposition to highlight the changes in accuracy and training time</InfoText>
           
         </LeftContainer>
