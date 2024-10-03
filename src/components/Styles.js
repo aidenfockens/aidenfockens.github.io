@@ -375,7 +375,7 @@ export const ExperienceContainer = styled.div`
 export const ExperienceDiv = styled.div`
   flex-basis: 48%; // Each div takes up about half the container
   display: flex;
-  background-color: ${colors.lightGray};
+  background-color: ${colors.white};
   padding: 10px 20px 10px 20px; // Reduce bottom padding (10px)
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for better appearance
