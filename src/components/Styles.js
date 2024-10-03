@@ -28,13 +28,7 @@ export const PageContainer = styled.div`
 `;
 
 
-export const RowContainer = styled.div`
-  display: flex;
-  flex-direction: row; /* Place LeftContainer and RightContainer side by side */
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 20px; /* Space between assignment rows */
-`;
+
 
 // Left container for text
 export const LeftContainer = styled.div`
@@ -267,4 +261,196 @@ export const InterestList = styled.ul`
   font-size: 20px;
   line-height: 1.6;
   color: ${colors.darkGray}; /* Standard dark gray color */
+`;
+
+
+
+
+// Title at the top of each cube
+export const ProjectTitle = styled.h3`
+  font-size: 24px;
+  color: ${colors.darkGray};
+  margin-bottom: 20px;
+`;
+
+// Image container inside the cube
+export const ProjectImageContainer = styled.div`
+  width: 100%; // Full width
+  img {
+    width: 100%; // Image takes full width
+    height: auto;
+    border-radius: 10px;
+  }
+`;
+
+// Container for the technology cubes
+export const TechContainer = styled.div`
+  display: flex;
+  justify-content: space-around; // Space between the tech cubes
+  margin-top: 20px;
+  width: 100%;
+`;
+
+// Individual technology cube
+export const TechCube = styled.div`
+  background-color: ${colors.secondary}; // Light red for technology cubes
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+  color: ${colors.darkGray};
+  width: 45%; // Each tech cube takes 45% of the space
+  text-align: center;
+`;
+
+// Link that wraps the entire project cube to make it clickable
+export const ProjectLink = styled(Link)`
+  text-decoration: none;
+  color: inherit; // Inherit the color to ensure styling remains
+`;
+
+
+export const RowContainer = styled.div`
+  display: flex;
+  flex-direction: row; /* Place LeftContainer and RightContainer side by side */
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px; /* Space between assignment rows */
+`;
+
+
+// Cube container for each project
+export const ProjectCube = styled.div`
+  background-color: ${colors.white}; // White cube background
+  border-radius: 20px; // Rounded corners
+  padding: 20px;
+
+  width: 90%; // Fixed width for three cubes per row (30% each + spacing)
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Light shadow
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px); // Lift up on hover
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); // Stronger shadow on hover
+  }
+`;
+
+export const IconContainer = styled.div`
+  display: flex;
+  justify-content: flex-start; // Align to the left
+  gap: 20px; // Space between the icons
+  margin-top: 20px; // Add some spacing above the icons
+`;
+
+// Style for each social icon
+export const SocialIcon = styled.a`
+  width: 40px; // Adjust the size of the icons
+  height: 40px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &:hover {
+    opacity: 0.8; // Slight hover effect
+    transition: opacity 0.3s ease;
+  }
+`;
+
+
+// Container for the entire work experience section
+export const ExperienceContainer = styled.div`
+  display: flex;
+  justify-content: space-between; // Places two ExperienceDivs side by side
+  width: 100%;
+  margin-bottom: 40px;
+`;
+
+// Each individual work experience div, taking up half of the screen
+export const ExperienceDiv = styled.div`
+  flex-basis: 48%; // Each div takes up about half the container
+  display: flex;
+  background-color: ${colors.lightGray};
+  padding: 10px 20px 10px 20px; // Reduce bottom padding (10px)
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for better appearance
+  align-items: flex-start; // Aligns items at the top
+`;
+
+// Left container for the company image (30% of the div)
+export const LeftexperienceContainer = styled.div`
+  flex-basis: 30%; // Takes up 30% of the ExperienceDiv
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+// Right container for the job details (70% of the div)
+export const RightexperienceContainer = styled.div`
+  flex-basis: 70%; // Takes up 70% of the ExperienceDiv
+  padding-left: 20px; // Adds spacing between the image and text
+  display: flex;
+  flex-direction: column;
+`;
+
+// Image container for the logo
+export const ExperienceImageContainer = styled.div`
+  width: 100%;
+  max-width: 100px; // Limit the size of the logo image
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+`;
+
+// Company and job title styling
+export const CompanyInfo = styled.div`
+  margin-bottom: 10px;
+`;
+
+// Job title styling
+export const JobTitle = styled.h3`
+  font-size: 18px;
+  font-weight: bold;
+  color: ${colors.darkGray};
+  margin: 0;
+`;
+
+export const ExperienceBulletList = styled.ul`
+  list-style-type: disc; /* Adds bullet points */
+  padding-left: 20px; /* Adds some padding to indent the bullet points */
+  font-size: 12px;
+  line-height: 1.6;
+  color: ${colors.darkGray}; /* Darker gray for readability */
+`;
+
+export const ExperienceBulletItem = styled.li`
+  margin-bottom: 4 px;
+  font-size: 12px;
+  font-weight: 500;
+  color: ${colors.darkGray}; /* Standard dark gray text */
+  padding: 10px;
+  border-radius: 5px;
+
+`;
+
+
+
+
+
+
+
+
+// Date line styling
+export const DateLine = styled.p`
+  font-size: 14px;
+  color: ${colors.darkGray};
+  margin-top: 10px;
+  font-style: italic;
 `;
