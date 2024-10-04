@@ -89,7 +89,7 @@ function About() {
         <img src={`${process.env.PUBLIC_URL}/images/Proj1.jpg`} alt="Project 1" />
       </ProjectImageContainer>
       <StyledParagraph>
-        Provides a safe space for anonymously alerting partners you have tested positive for an STD. Includes a sympton tracker and hospital locations.
+        Anonymously alert partners you have tested positive for an STD. Includes a sympton tracker and hospital locations.
       </StyledParagraph>
       <TechContainer>
         <TechCube>React</TechCube>
@@ -127,7 +127,7 @@ function About() {
       </StyledParagraph>
       <TechContainer>
         <TechCube>Flask</TechCube>
-        <TechCube>Machine Learning/Computer Vision</TechCube>
+        <TechCube>Computer Vision</TechCube>
       </TechContainer>
     </ProjectCube>
   </ProjectLink>
