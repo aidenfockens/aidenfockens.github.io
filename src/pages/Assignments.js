@@ -57,7 +57,7 @@ function Assignments() {
 
       <RowContainer>
         <LeftContainer>
-          <AssignmentNameText>Assignment 2</AssignmentNameText>
+          <AssignmentNameText>Assignment 4</AssignmentNameText>
           <InfoText>
             Simulation of a Search Algorithm using LSA search
           </InfoText>
