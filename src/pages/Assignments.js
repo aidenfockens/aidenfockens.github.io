@@ -71,6 +71,18 @@ function Assignments() {
         </RightContainer>
       </RowContainer>
 
+      <RowContainer>
+        <LeftContainer>
+          <AssignmentNameText>Assignment 5</AssignmentNameText>
+          <InfoText>
+            Using KNN to predict bank-customer retention
+          </InfoText>
+
+        </LeftContainer>
+        <RightContainer>
+            <GreenButton href= "https://github.com/aidenfockens/afockens-assignment-5">Github Link</GreenButton>
+        </RightContainer>
+      </RowContainer>
 
 
 
