@@ -84,6 +84,18 @@ function Assignments() {
         </RightContainer>
       </RowContainer>
 
+      <RowContainer>
+        <LeftContainer>
+          <AssignmentNameText>Midterm</AssignmentNameText>
+          <InfoText>
+            Using a Naive Bayes Class, TfdifVectorizer, Feature Extraction, and a Random Forest I predicted scores of amazon Reviews.
+          </InfoText>
+
+        </LeftContainer>
+        <RightContainer>
+            <GreenButton href= "https://github.com/aidenfockens/CS506-Afockens-Midterm">Github Link</GreenButton>
+        </RightContainer>
+      </RowContainer>
 
 
 
