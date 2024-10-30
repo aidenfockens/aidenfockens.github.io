@@ -97,6 +97,22 @@ function Assignments() {
         </RightContainer>
       </RowContainer>
 
+      <RowContainer>
+        <LeftContainer>
+          <AssignmentNameText>Assignment6</AssignmentNameText>
+          <InfoText>
+            Visualization of linear regression on a random dataset, with configurable N, mu, sigma, and S
+          </InfoText>
+          <video width="400" controls>
+            <source src={`${process.env.PUBLIC_URL}/images/vidofregression.mp4`} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </LeftContainer>
+        <RightContainer>
+            <GreenButton href= "https://github.com/aidenfockens/afockens-assignment-6">Github Link</GreenButton>
+        </RightContainer>
+      </RowContainer>
+
 
 
 
