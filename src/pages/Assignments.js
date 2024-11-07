@@ -99,7 +99,7 @@ function Assignments() {
 
       <RowContainer>
         <LeftContainer>
-          <AssignmentNameText>Assignment6</AssignmentNameText>
+          <AssignmentNameText>Assignment 6</AssignmentNameText>
           <InfoText>
             Visualization of linear regression on a random dataset, with configurable N, mu, sigma, and S
           </InfoText>
@@ -114,7 +114,21 @@ function Assignments() {
       </RowContainer>
 
 
-
+      <RowContainer>
+        <LeftContainer>
+          <AssignmentNameText>Assignment 7</AssignmentNameText>
+          <InfoText>
+            Inclusion of Confidence Intervals and parameter hypotheses's with assignment 6
+          </InfoText>
+          <video width="400" controls>
+            <source src={`${process.env.PUBLIC_URL}/images/assign7.mp4`} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </LeftContainer>
+        <RightContainer>
+            <GreenButton href= "https://github.com/aidenfockens/afockens-assignment-6">Github Link</GreenButton>
+        </RightContainer>
+      </RowContainer>
 
 
 
