@@ -126,7 +126,7 @@ function Assignments() {
           </video>
         </LeftContainer>
         <RightContainer>
-            <GreenButton href= "https://github.com/aidenfockens/afockens-assignment-6">Github Link</GreenButton>
+            <GreenButton href= "https://github.com/aidenfockens/afockens-assignment-7">Github Link</GreenButton>
         </RightContainer>
       </RowContainer>
 
