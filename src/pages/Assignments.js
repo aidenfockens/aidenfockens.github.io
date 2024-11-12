@@ -130,6 +130,22 @@ function Assignments() {
         </RightContainer>
       </RowContainer>
 
+      <RowContainer>
+        <LeftContainer>
+          <AssignmentNameText>Assignment 8</AssignmentNameText>
+          <InfoText>
+            Visualizing shifts in dataset and its impact on a linear regression model
+          </InfoText>
+          <video width="400" controls>
+            <source src={`${process.env.PUBLIC_URL}/images/regression_shifts.mp4`} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </LeftContainer>
+        <RightContainer>
+            <GreenButton href= "https://github.com/aidenfockens/afockens-assignment-8">Github Link</GreenButton>
+        </RightContainer>
+      </RowContainer>
+
 
 
 
