@@ -153,7 +153,7 @@ function Assignments() {
             Visualizing steps in a simple nueral network for classification
           </InfoText>
           <video width="400" controls>
-            <source src={`${process.env.PUBLIC_URL}/images/assign9.mp4`} type="video/mp4" />
+            <source src={`${process.env.PUBLIC_URL}/images/assign9-vid.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </LeftContainer>
