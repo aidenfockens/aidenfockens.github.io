@@ -163,6 +163,22 @@ function Assignments() {
       </RowContainer>
 
 
+      <RowContainer>
+        <LeftContainer>
+          <AssignmentNameText>Assignment 10</AssignmentNameText>
+          <InfoText>
+            Simple google search algorithm
+          </InfoText>
+          <video width="400" controls>
+            <source src={`${process.env.PUBLIC_URL}/images/assign10.mp4`} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </LeftContainer>
+        <RightContainer>
+            <GreenButton href= "https://github.com/aidenfockens/afockens-assignment-9">Github Link</GreenButton>
+        </RightContainer>
+      </RowContainer>
+
     </PageContainer>
   );
 }
