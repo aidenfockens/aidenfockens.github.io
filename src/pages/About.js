@@ -1,5 +1,5 @@
 import React from 'react';
-import {IconContainer,SocialIcon, ProjectCube, ProjectTitle, ProjectImageContainer, TechContainer, TechCube, ProjectLink, HighlightText,SubText,InterestList,InterestItem,BulletList, BulletItem, LeftContainerWhite,Title,LargeTextContainer,StyledParagraph,  PageContainer, RowContainer, LeftContainer, RightContainer, ImageContainer, CaptionContainer, IntroText, NameText, ExperienceContainer, ExperienceDiv, LeftexperienceContainer, RightexperienceContainer, ExperienceImageContainer, CompanyInfo, JobTitle, ExperienceBulletList, ExperienceBulletItem, DateLine } from '../components/Styles';
+import {IconContainer,SocialIcon, ProjectCube, ProjectTitle, ProjectImageContainer, TechContainer, TechCube, ProjectLink, HighlightText,SubText,InterestList,InterestItem,BulletList, BulletItem, LeftContainerWhite,Title,LargeTextContainer,StyledParagraph,  PageContainer, RowContainer, LeftContainer, RightContainer, ImageContainer, CaptionContainer, IntroText, NameText, ExperienceContainer, ExperienceDiv, LeftexperienceContainer, RightexperienceContainer, ExperienceImageContainer, CompanyInfo, JobTitle, ExperienceBulletList, ExperienceBulletItem, DateLine, InterestHighlight } from '../components/Styles';
 
 function About() {
     return(
@@ -8,7 +8,6 @@ function About() {
         <LeftContainer>
           <IntroText>Hi! I'm</IntroText>
           <NameText>Aiden Fockens</NameText>
-
           <IconContainer>
             <SocialIcon href="https://www.linkedin.com/in/aiden-fockens/" target="_blank">
             <img src={`${process.env.PUBLIC_URL}/images/linkedin.svg`} alt="LinkedIn" />
@@ -29,25 +28,27 @@ function About() {
           <ImageContainer>
             <img src={`${process.env.PUBLIC_URL}/images/profile.jpg`} alt="My Image"></img>
           </ImageContainer>
-          <CaptionContainer>
-            <p>My favorite shirt called "felines in the forest". There are some similar on ebay if interested* </p>
-          </CaptionContainer>
         </RightContainer>
+
+
+
+      
       </RowContainer>
       <Title id = "about-me">
         About Me
       </Title>
+
   <RowContainer>
           <LeftContainerWhite>
           <LargeTextContainer>
   <StyledParagraph>
-    <HighlightText>I'm graduating from Boston University</HighlightText>
-    <SubText>this January!</SubText>
+
+    <InterestHighlight>Graduated from Boston University in December of 2024</InterestHighlight>
+
   </StyledParagraph>
   
   <StyledParagraph>
-    <HighlightText>I study Computer Science</HighlightText>
-    <SubText>with a Minor in Data Science.</SubText>
+    <InterestHighlight>Received a BA in Computer Science + Data Science Minor</InterestHighlight>
   </StyledParagraph>
   
   <StyledParagraph>
@@ -59,20 +60,28 @@ function About() {
     <InterestItem>Machine Learning</InterestItem>
     <InterestItem>Cloud Computing</InterestItem>
   </InterestList>
+  <StyledParagraph>
+    And I love to work in...
+  </StyledParagraph>
+  
+  <InterestList>
+    <InterestItem>Python, Javascript, and Go</InterestItem>
+
+  </InterestList>
 </LargeTextContainer>
           </LeftContainerWhite>
           <LeftContainerWhite>
     <LargeTextContainer>
       <StyledParagraph>
         {/* Title for the skills section */}
-        <HighlightText>Skills/Technologies</HighlightText>
+        <HighlightText>Technologies I use all the time!</HighlightText>
         
         <BulletList>
-          <BulletItem>React</BulletItem>
-          <BulletItem>Node</BulletItem>
           <BulletItem>Flask</BulletItem>
-          <BulletItem>Machine Learning with TensorFlow and Keras</BulletItem>
-          <BulletItem>Google Cloud Storage</BulletItem>
+          <BulletItem>Docker/Kubernetes </BulletItem>
+          <BulletItem>Kafka</BulletItem>
+          <BulletItem>Machine learning w/ Tenserflow, Keras, Spark</BulletItem>
+          <BulletItem>SQLAlchemy, Plotly, numpy  </BulletItem>
         </BulletList>
       </StyledParagraph>
     </LargeTextContainer>
@@ -82,6 +91,26 @@ function About() {
         Projects
       </Title>
   <RowContainer>
+  
+  <ProjectLink to="https://github.com/aidenfockens/aiden_neel_healthEvents">
+    <ProjectCube>
+      <ProjectTitle>Health Events Pipeline</ProjectTitle>
+      <ProjectImageContainer>
+        <img src={`${process.env.PUBLIC_URL}/images/health_events.jpg`} alt="Project 3" />
+      </ProjectImageContainer>
+      <StyledParagraph>
+        This app processes health events from a Kafka producer to predict anomalies and display up-to-date statistics. 
+        This is done through a Cronjob every four hours to fetch new events, an AWS RDS holding the data, and a Flask server that 
+        responds with the most recent information.
+      </StyledParagraph>
+      <TechContainer>
+        <TechCube>AWS, GCP, Kubernetes</TechCube>
+        <TechCube>Flask, Kafka</TechCube>
+      </TechContainer>
+    </ProjectCube>
+  </ProjectLink>
+
+
   <ProjectLink to="https://github.com/aidenfockens/SexualHealthApp/tree/main">
     <ProjectCube>
       <ProjectTitle>Sexual Health App</ProjectTitle>
@@ -89,7 +118,8 @@ function About() {
         <img src={`${process.env.PUBLIC_URL}/images/Proj1.jpg`} alt="Project 1" />
       </ProjectImageContainer>
       <StyledParagraph>
-        Anonymously alert partners you have tested positive for an STD. Includes a sympton tracker and hospital locations.
+        Anonymously alerts partners you have tested positive for an STD. Supports multiple users and complex interactions between user data. 
+        It also includes a sympton tracker and hospital locations through external
       </StyledParagraph>
       <TechContainer>
         <TechCube>React</TechCube>
@@ -115,22 +145,9 @@ function About() {
     </ProjectCube>
   </ProjectLink>
 
-  <ProjectLink to="https://github.com/aidenfockens/Kilter_Board_Vision">
-    <ProjectCube>
-      <ProjectTitle>Kilter Board Vision</ProjectTitle>
-      <ProjectImageContainer>
-        <img src={`${process.env.PUBLIC_URL}/images/Proj3.jpg`} alt="Project 3" />
-      </ProjectImageContainer>
-      <StyledParagraph>
-        (IN PROGRESS) I will scrape videos of climbers, highlight features like hands and feet, and feed this to a network.
-        It will then predict the best way to do new climbs.
-      </StyledParagraph>
-      <TechContainer>
-        <TechCube>Flask</TechCube>
-        <TechCube>Computer Vision</TechCube>
-      </TechContainer>
-    </ProjectCube>
-  </ProjectLink>
+  
+
+  
 </RowContainer>
 <Title id="work-experience">
         Work Experience

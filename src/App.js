@@ -2,9 +2,6 @@ import React, { useEffect } from 'react';
 import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import About from './pages/About';
-import WorkExperience from './pages/WorkExperience'; // Keep this if you still want a separate route for Assignments
-import Projects from './pages/Projects'; // Optional, only needed if Projects is a separate page
-import Contact from './pages/Contact'; // Optional, only needed if Contact is a separate page
 import Assignments from './pages/Assignments';
 import './App.css';
 

@@ -5,16 +5,14 @@ import { Link } from 'react-router-dom';
 
 
 export const colors = {
-    primary: '#D32F2F',
-    secondary: '#FFCDD2',
-    complementary: '#388E3C',
-    darkGray: '#333333',
-    lightGray: '#E0E0E0',
-    white: '#FFFFFF',
-    yellow: '#FBC02D',
-    blue: '#0288D1',
-  };
-
+  primary: '#1976D2', // Professional blue
+  secondary: '#BBDEFB', // Light blue
+  complementary: '#388E3C', // Green for accents
+  darkGray: '#212121',
+  lightGray: '#F5F5F5', // Soft gray background
+  white: '#FFFFFF',
+  black: '#000000',
+};
 // Main content container for each page
 
 
@@ -30,12 +28,11 @@ export const PageContainer = styled.div`
 
 
 
-// Left container for text
 export const LeftContainer = styled.div`
   flex: 1;
   padding: 20px;
-  background-color: ${colors.lightGray};
-  border-radius: 20px 0 0 20px;
+  background-color: ${colors.white}; /* White background for professionalism */
+  border-radius: 8px;
 `;
 
 // Right container for images
@@ -45,7 +42,7 @@ export const RightContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${colors.lightGray};
+  background-color: ${colors.white};
   border-radius: 0 20px 20px 0;
 `;
 
@@ -169,19 +166,18 @@ export const LargeTextContainer = styled.div`
 
 `;
 
-// Example usage of the text within LeftContainer
 export const StyledParagraph = styled.p`
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  margin-bottom: 20px;
-  color: ${colors.darkGray}; /* Match the text color to the theme */
-  text-align: justify; /* Justify text for a clean, professional appearance */
+  font-size: 18px; /* Slightly smaller font for better balance */
+  color: ${colors.darkGray};
+  text-align: justify;
+  margin-bottom: 16px;
 `;
 
 
 export const Title = styled.h2`
   font-family: 'Montserrat', sans-serif; /* Modern font */
-  font-size: 70px; /* Large and bold */
+  font-size: 50px; /* Large and bold */
   font-weight: 700; /* Bold text */
   text-align: center; /* Center the title */
   text-decoration: underline; /* Underline the text */
@@ -194,8 +190,8 @@ export const LeftContainerWhite = styled.div`
   flex: 1;
   margin:20px;
   padding: 20px;
-  background-color: ${colors.white};
-  border-radius: 20px 20px 20px 20px;
+  background-color: ${colors.lightGray};
+  border-radius: 10px 10px 10px 10px;
 `;
 
 
@@ -227,16 +223,19 @@ export const BulletItem = styled.li`
 
 `;
 
-// Highlighted text with background color for emphasis
+// Updated HighlightText
 export const HighlightText = styled.span`
-  font-size: 26px;
+  font-size: 24px;
   font-weight: bold;
-  color: ${colors.darkGray}; /* Standard dark gray text */
-  background-color: ${colors.secondary}; /* Subtle secondary light red background */
-  padding: 5px 10px;
-  border-radius: 5px; /* Slightly rounded corners for a smooth look */
-  display: inline-block; /* Ensures background wraps just the text */
+  color: black; /* Professional blue for emphasis */
 `;
+
+export const InterestHighlight = styled.li`
+  font-size: 19px;
+  font-weight: bold;
+  color: black; /* Professional blue for emphasis */
+`
+
 
 // Sub-text for additional information
 export const SubText = styled.span`
@@ -252,7 +251,7 @@ export const InterestItem = styled.li`
   margin-bottom: 10px;
   font-size: 22px;
   font-weight: 500;
-  color: #8a0c26; /* Complementary green for interests */
+
 `;
 
 export const InterestList = styled.ul`
@@ -375,11 +374,12 @@ export const ExperienceContainer = styled.div`
 export const ExperienceDiv = styled.div`
   flex-basis: 48%; // Each div takes up about half the container
   display: flex;
-  background-color: ${colors.white};
+  background-color: ${colors.lightGray};
   padding: 10px 20px 10px 20px; // Reduce bottom padding (10px)
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for better appearance
   align-items: flex-start; // Aligns items at the top
+  gap: 20px;
 `;
 
 // Left container for the company image (30% of the div)
@@ -393,7 +393,7 @@ export const LeftexperienceContainer = styled.div`
 // Right container for the job details (70% of the div)
 export const RightexperienceContainer = styled.div`
   flex-basis: 70%; // Takes up 70% of the ExperienceDiv
-  padding-left: 20px; // Adds spacing between the image and text
+  padding-left: 40px; // Adds spacing between the image and text
   display: flex;
   flex-direction: column;
 `;
