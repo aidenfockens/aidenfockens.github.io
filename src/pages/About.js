@@ -113,34 +113,32 @@ function About() {
 
   <ProjectLink to="https://github.com/aidenfockens/SexualHealthApp/tree/main">
     <ProjectCube>
-      <ProjectTitle>Sexual Health App</ProjectTitle>
+      <ProjectTitle>On Belay</ProjectTitle>
       <ProjectImageContainer>
-        <img src={`${process.env.PUBLIC_URL}/images/Proj1.jpg`} alt="Project 1" />
+        <img src={`${process.env.PUBLIC_URL}/images/climbingProject.jpg`} alt="Project 1" />
       </ProjectImageContainer>
       <StyledParagraph>
-        Anonymously alerts partners you have tested positive for an STD. Supports multiple users and complex interactions between user data. 
-        It also includes a sympton tracker and hospital locations through external
+        Find Partners to climb with! With a React Native frontend, you can access it on your phone or computer. Make friends, message them, plan trips, and post about them!
       </StyledParagraph>
       <TechContainer>
-        <TechCube>React</TechCube>
-        <TechCube>Node/Express</TechCube>
+        <TechCube>React Native</TechCube>
+        <TechCube>Flask, SQLAlchemy</TechCube>
       </TechContainer>
     </ProjectCube>
   </ProjectLink>
 
   <ProjectLink to="https://github.com/aidenfockens/facial_recognition_project">
     <ProjectCube>
-      <ProjectTitle>Facial Recognition Models</ProjectTitle>
+      <ProjectTitle>Amazon Review Analysis</ProjectTitle>
       <ProjectImageContainer>
-        <img src={`${process.env.PUBLIC_URL}/images/Proj2.jpg`} alt="Project 2" />
+        <img src={`${process.env.PUBLIC_URL}/images/amazonProject.jpg`} alt="Project 2" />
       </ProjectImageContainer>
       <StyledParagraph>
-        Created four neural networks from scratch to guess age, nationality, gender, and emotion. Used utkFaces and MMA Facial Expressions for 
-        our data.
+        Implements feature extraction, Naive Bayes classifiers, and random forest models to predict the score of Amazon Reviews
       </StyledParagraph>
       <TechContainer>
-        <TechCube>TensorFlow</TechCube>
-        <TechCube>Keras</TechCube>
+        <TechCube>SkLearn</TechCube>
+        <TechCube>Pandas</TechCube>
       </TechContainer>
     </ProjectCube>
   </ProjectLink>
