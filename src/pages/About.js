@@ -1,5 +1,5 @@
 import React from 'react';
-import {IconContainer,SocialIcon, ProjectCube, ProjectTitle, ProjectImageContainer, TechContainer, TechCube, ProjectLink, HighlightText,SubText,InterestList,InterestItem,BulletList, BulletItem, LeftContainerWhite,Title,LargeTextContainer,StyledParagraph,  PageContainer, RowContainer, LeftContainer, RightContainer, ImageContainer, CaptionContainer, IntroText, NameText, ExperienceContainer, ExperienceDiv, LeftexperienceContainer, RightexperienceContainer, ExperienceImageContainer, CompanyInfo, JobTitle, ExperienceBulletList, ExperienceBulletItem, DateLine, InterestHighlight } from '../components/Styles';
+import {ProjectRowContainer, IconContainer,SocialIcon, ProjectCube, ProjectTitle, ProjectImageContainer, TechContainer, TechCube, ProjectLink, HighlightText,SubText,InterestList,InterestItem,BulletList, BulletItem, LeftContainerWhite,Title,LargeTextContainer,StyledParagraph,  PageContainer, RowContainer, LeftContainer, RightContainer, ImageContainer, CaptionContainer, IntroText, NameText, ExperienceContainer, ExperienceDiv, LeftexperienceContainer, RightexperienceContainer, ExperienceImageContainer, CompanyInfo, JobTitle, ExperienceBulletList, ExperienceBulletItem, DateLine, InterestHighlight } from '../components/Styles';
 
 function About() {
     return(
@@ -91,7 +91,7 @@ function About() {
         Projects
       </Title>
   <RowContainer>
-  
+  <ProjectRowContainer>
   <ProjectLink to="https://github.com/aidenfockens/aiden_neel_healthEvents">
     <ProjectCube>
       <ProjectTitle>Health Events Pipeline</ProjectTitle>
@@ -109,6 +109,7 @@ function About() {
       </TechContainer>
     </ProjectCube>
   </ProjectLink>
+
 
 
   <ProjectLink to="https://github.com/aidenfockens/SexualHealthApp/tree/main">
@@ -142,7 +143,7 @@ function About() {
       </TechContainer>
     </ProjectCube>
   </ProjectLink>
-
+  </ProjectRowContainer>
   
 
   

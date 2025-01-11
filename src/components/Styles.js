@@ -322,12 +322,13 @@ export const ProjectCube = styled.div`
   background-color: ${colors.white}; // White cube background
   border-radius: 20px; // Rounded corners
   padding: 20px;
-
-  width: 90%; // Fixed width for three cubes per row (30% each + spacing)
+  width: 300px; // Set a fixed width for consistency
+  min-height: 450px; // Ensure enough height for content
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Light shadow
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; // Arrange content vertically
+  justify-content: space-between; // Distribute content within the cube
+  align-items: center; // Center content horizontally
   margin-bottom: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -335,6 +336,18 @@ export const ProjectCube = styled.div`
     transform: translateY(-10px); // Lift up on hover
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); // Stronger shadow on hover
   }
+`;
+
+export const ProjectRowContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap; // Allow wrapping to next row if needed
+  justify-content: center; // Center cubes horizontally
+  align-items: flex-start; // Align cubes to the top
+  gap: 20px; // Space between cubes (horizontal and vertical)
+  width: 100%; // Take the full width of the container
+  margin: 0 auto 40px auto; // Center on the screen and add space below
+  padding: 0 20px; // Add padding on the sides for responsiveness
+  box-sizing: border-box; // Ensure padding doesn't affect width
 `;
 
 export const IconContainer = styled.div`
